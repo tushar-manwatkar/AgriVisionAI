@@ -1,0 +1,49 @@
+# Environment variables and local secrets
+.[Ee][Nn][Vv]
+.[Ee][Nn][Vv].*
+!.[Ee][Nn][Vv].example
+!.[Ee][Nn][Vv].sample
+
+# Node.js dependencies and generated frontend output
+node_modules/
+.next/
+.vite/
+dist/
+build/
+coverage/
+
+# Python environments, caches, and test output
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local datasets and uploaded images
+backend/data/
+backend/uploads/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local archives and unrelated model formats
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.pt
+*.pth
+
+# Trained AgriVisionAI model files in backend/model/saved_models/ are
+# intentionally not ignored: the API needs matching model and class files.
