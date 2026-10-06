@@ -101,7 +101,7 @@ function App() {
         {apiStatus === 'offline' && <div className="api-banner"><AlertCircle size={18} /><span>The analyzer is offline. Start the backend, then refresh this page.</span></div>}
 
         <section id="analyzer" className="field-check">
-          <div className="field-check-heading"><div><span className="section-kicker">{predictionResult ? 'YOUR RESULT' : 'PLANT CHECK'}</span><h2>{predictionResult ? 'Your leaf report' : 'Add a leaf photo'}</h2></div><p>{predictionResult ? 'Review the visual match and care notes.' : 'Choose a photo or take one with your camera.'}</p></div>
+          <div className="field-check-heading"><div><span className="section-kicker">{predictionResult ? 'YOUR RESULT' : 'PLANT CHECK'}</span><h2>{predictionResult ? 'Your leaf report' : 'Add a leaf photo'}</h2></div><p>{predictionResult ? 'Review the visual match and care notes.' : 'Choose a photo from your device.'}</p></div>
 
           <div className="capture-board">
             <ImageUpload onImageSelect={handleImageSelect} onClear={handleClear} selectedImage={selectedImage} isProcessing={isProcessing} />

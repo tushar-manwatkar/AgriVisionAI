@@ -193,7 +193,6 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
         </div>
       )}
 
-      {!selectedImage && !isCameraOpen && <div className="camera-action-row"><span>Prefer a live photo?</span><button type="button" onClick={openCamera} disabled={isProcessing}><Camera size={15} /> Open camera</button></div>}
 
       {error && (
         <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg flex items-center gap-3 text-red-700 dark:text-red-400">
