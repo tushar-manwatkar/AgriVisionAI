@@ -4,15 +4,8 @@ import Navbar from './components/Navbar';
 import ImageUpload from './components/ImageUpload';
 import PredictionResults, { PredictionSuggestions } from './components/PredictionResults';
 import PredictionHistory from './components/PredictionHistory';
-import { predictFromImage, fileToBase64, PredictionResponse, checkHealth, Prediction } from './api/api';
-
-interface HistoryItem {
-  id: string;
-  timestamp: Date;
-  imageName: string;
-  prediction: Prediction;
-  imageData: string;
-}
+import { predictFromImage, fileToBase64, PredictionResponse, checkHealth } from './api/api';
+import type { HistoryItem } from './types';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {

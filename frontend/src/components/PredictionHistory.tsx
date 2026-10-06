@@ -1,13 +1,7 @@
 import React from 'react';
 import { Clock, Leaf, Trash2 } from 'lucide-react';
-import { formatDiseaseName, Prediction } from '../api/api';
-
-interface HistoryItem {
-  id: string;
-  imageName: string;
-  prediction: Prediction;
-  imageData: string;
-}
+import { formatDiseaseName } from '../api/api';
+import type { HistoryItem } from '../types';
 
 interface PredictionHistoryProps {
   history: HistoryItem[];
