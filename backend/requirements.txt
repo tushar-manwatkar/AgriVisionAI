@@ -7,6 +7,7 @@ Werkzeug==3.0.1
 
 # Machine Learning
 tensorflow==2.20.0
+keras==3.13.2
 numpy==1.26.2
 Pillow==10.1.0
 
